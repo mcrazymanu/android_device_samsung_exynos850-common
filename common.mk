@@ -62,6 +62,9 @@ PRODUCT_COPY_FILES += \
     hardware/samsung_slsi/libbt/conf/bt_did.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bt_did.conf \
     hardware/samsung_slsi/libbt/conf/bt_vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bt_vendor.conf
 
+# Bootanimation
+TARGET_BOOTANIMATION_HALF_RES := true
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-service_64.exynos850 \
