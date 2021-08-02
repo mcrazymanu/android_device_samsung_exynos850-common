@@ -91,6 +91,8 @@ TARGET_KERNEL_SOURCE := kernel/samsung/exynos850
 TARGET_KEYMASTER_VARIANT := samsung
 
 ## Manifest
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 
