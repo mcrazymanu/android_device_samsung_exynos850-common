@@ -63,6 +63,9 @@ function blob_fixup() {
         vendor/bin/hw/rild|vendor/lib64/libsec-ril*.so)
             "${PATCHELF}" --replace-needed libril.so libril_sem.so "${2}"
             ;;
+	vendor/lib*/libexynosdisplay.so)
+	    sed -i "s/hwc\.exynos\.vsync_mode/vendor.hwc.vsync_mode/g" "${2}"
+	    ;;
         vendor/lib*/libsensorlistener.so)
             "${PATCHELF}" --add-needed libshim_sensorndkbridge.so "${2}"
             ;;
