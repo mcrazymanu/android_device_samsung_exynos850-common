@@ -1,0 +1,120 @@
+#
+# Copyright (C) 2022 The LineageOS Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+COMMON_PATH := device/samsung/exynos850-common
+
+## Include path
+TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
+
+## Architecture
+TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv8-a
+TARGET_CPU_ABI := arm64-v8a
+TARGET_CPU_ABI2 :=
+TARGET_CPU_VARIANT := cortex-a53
+
+## Architecture (Secondary)
+TARGET_2ND_ARCH := arm
+TARGET_2ND_ARCH_VARIANT := armv8-a
+TARGET_2ND_CPU_ABI := armeabi-v7a
+TARGET_2ND_CPU_ABI2 := armeabi
+TARGET_2ND_CPU_VARIANT := cortex-a53
+
+## Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
+
+## Boot Image
+BOARD_BOOTIMG_HEADER_VERSION := 2
+BOARD_CUSTOM_BOOTIMG := true
+BOARD_CUSTOM_BOOTIMG_MK := $(COMMON_PATH)/mkbootimg.mk
+BOARD_KERNEL_BASE := 0x10000000
+BOARD_KERNEL_OFFSET := 0x00008000
+BOARD_KERNEL_PAGESIZE := 2048
+BOARD_RAMDISK_OFFSET := 0x01000000
+BOARD_TAGS_OFFSET := 0x00000100
+
+BOARD_MKBOOTIMG_ARGS := --base $(BOARD_KERNEL_BASE)
+BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE)
+BOARD_MKBOOTIMG_ARGS += --kernel_offset $(BOARD_KERNEL_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_TAGS_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
+
+## DTBO
+BOARD_KERNEL_SEPARATED_DTBO := true
+BOARD_DTBO_CFG := $(COMMON_PATH)/configs/kernel/$(TARGET_DEVICE).cfg
+
+## Dynamic Partitions
+BOARD_SUPER_PARTITION_SIZE := 6018826240
+
+## Filesystem
+BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_VENDOR := vendor
+TARGET_USERIMAGES_USE_EXT4 := true
+
+## Kernel
+BOARD_KERNEL_IMAGE_NAME := Image
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_SOURCE := kernel/samsung/exynos850
+
+## Manifest
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
+
+## Partitions
+BOARD_BOOTIMAGE_PARTITION_SIZE := 46137344
+BOARD_CACHEIMAGE_PARTITION_SIZE := 629145600
+BOARD_DTBOIMG_PARTITION_SIZE := 8388608
+BOARD_FLASH_BLOCK_SIZE := 4096
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 55574528
+
+BOARD_USES_METADATA_PARTITION := true
+
+BOARD_ROOT_EXTRA_FOLDERS := efs
+
+## Platform
+BOARD_VENDOR := samsung
+TARGET_BOARD_PLATFORM := universal3830
+TARGET_BOOTLOADER_BOARD_NAME := exynos850
+TARGET_SOC := exynos850
+
+## Properties
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+
+## Recovery
+BOARD_INCLUDE_RECOVERY_DTBO := true
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/configs/init/fstab.exynos850
+TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
+
+## Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
+
+## RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
+## Security
+VENDOR_SECURITY_PATCH := 2021-09-01
+
+## Verified Boot
+BOARD_AVB_ENABLE := true
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
+BOARD_AVB_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
+BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA4096
+BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
+BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
+BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
