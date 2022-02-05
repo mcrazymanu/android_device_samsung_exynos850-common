@@ -19,6 +19,9 @@ COMMON_PATH := device/samsung/exynos850-common
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Get non-open-source specific aspects
+$(call inherit-product, vendor/samsung/exynos850-common/exynos850-common-vendor.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl:32 \

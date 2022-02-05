@@ -18,6 +18,9 @@ COMMON_PATH := device/samsung/exynos850-common
 ## Include path
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
+## Inherit proprietary vendor configuration
+include vendor/samsung/exynos850-common/BoardConfigVendor.mk
+
 ## Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
