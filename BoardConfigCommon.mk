@@ -135,6 +135,11 @@ ENABLE_VENDOR_RIL_SERVICE := true
 ## Security
 VENDOR_SECURITY_PATCH := 2021-09-01
 
+## SELinux
+BOARD_SEPOLICY_TEE_FLAVOR := teegris
+include device/lineage/sepolicy/exynos/sepolicy.mk
+include device/samsung_slsi/sepolicy/sepolicy.mk
+
 ## Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
