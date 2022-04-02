@@ -1,4 +1,4 @@
-# Common proprietary files - from Samsung package version M127FXXU3AUJ6, unless pinned
+# Common proprietary files - from Samsung package version M127FXXS3AVB2, unless pinned
 
 ## Audio
 -vendor/lib/hw/audio.primary.exynos850.so
