@@ -104,6 +104,7 @@ vendor/etc/media_profiles_V1_0.xml
 ## Firmware
 vendor/firmware/MCD_NACHO_slog.bin
 vendor/firmware/abox_tplg.bin
+vendor/firmware/abox_tplg.conf
 vendor/firmware/aw8896_cfg.bin
 vendor/firmware/aw8896_fw_d.bin
 vendor/firmware/aw8896_fw_e.bin
@@ -118,6 +119,10 @@ vendor/firmware/setfile_gc02m1_macro.bin
 vendor/firmware/setfile_gc5035.bin
 vendor/firmware/setfile_gm2.bin
 vendor/firmware/setfile_sr846.bin
+vendor/firmware/tdnr_GC02M1.json
+vendor/firmware/tdnr_GC5035.json
+vendor/firmware/tdnr_S5KGM2.json
+vendor/firmware/tdnr_SR846.json
 vendor/firmware/txse1.bin
 vendor/firmware/txse2.bin
 
