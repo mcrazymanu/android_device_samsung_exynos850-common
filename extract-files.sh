@@ -60,7 +60,7 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        vendor/bin/hw/rild|vendor/lib*/libsec-ril.so)
+        vendor/bin/hw/rild|vendor/lib64/libsec-ril*.so)
             "${PATCHELF}" --replace-needed libril.so libril_sem.so "${2}"
             ;;
         vendor/lib*/libsensorlistener.so)
