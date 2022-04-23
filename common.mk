@@ -128,7 +128,9 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0-service
+    android.hardware.keymaster@4.0-service.samsung \
+    android.hardware.keymaster@4.1.vendor \
+    libkeymaster4_1support.vendor
 
 # Lights
 PRODUCT_PACKAGES += \
