@@ -964,6 +964,22 @@ on post-fs-data
     chown system system /sys/class/sec/mmc/un
     chmod 440 /sys/class/sec/mmc/un
 
+    # System Performance HyPer Permission
+    chown system system /sys/kernel/gpu/gpu_freq_table
+    chown system system /sys/kernel/gpu/gpu_governor
+    chown system system /sys/kernel/gpu/gpu_max_clock
+    chown system system /sys/kernel/gpu/gpu_min_clock
+    chown system system /sys/kernel/gpu/gpu_cl_boost_disable
+    chmod 0444 /sys/kernel/gpu/gpu_freq_table
+    chmod 0644 /sys/kernel/gpu/gpu_governor
+    chmod 0644 /sys/kernel/gpu/gpu_max_clock
+    chmod 0644 /sys/kernel/gpu/gpu_min_clock
+    chmod 0664 /sys/kernel/gpu/gpu_cl_boost_disable
+    chmod 444 /sys/devices/platform/17000010.devfreq_mif/devfreq/17000010.devfreq_mif/available_frequencies
+    chmod 664 /sys/devices/platform/17000010.devfreq_mif/devfreq/17000010.devfreq_mif/scaling_devfreq_min
+    chown root system /sys/devices/platform/17000010.devfreq_mif/devfreq/17000010.devfreq_mif/available_frequencies
+    chown root system /sys/devices/platform/17000010.devfreq_mif/devfreq/17000010.devfreq_mif/scaling_devfreq_min
+
 on charger
     chmod 0664 /sys/class/power_supply/battery/batt_temp_table
     chown system radio /sys/class/power_supply/battery/batt_temp_table
