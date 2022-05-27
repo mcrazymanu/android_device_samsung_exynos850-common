@@ -122,6 +122,10 @@
         </interface>
     </hal>
     <hal format="hidl" override="true">
+        <name>android.hardware.nfc</name>
+        <transport>hwbinder</transport>
+    </hal>
+    <hal format="hidl" override="true">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
     </hal>

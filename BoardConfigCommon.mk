@@ -148,6 +148,13 @@ BOARD_SEPOLICY_TEE_FLAVOR := teegris
 include device/lineage/sepolicy/exynos/sepolicy.mk
 include device/samsung_slsi/sepolicy/sepolicy.mk
 
+## SKU
+ODM_MANIFEST_SKUS += hce hceese hcesim hcesimese
+ODM_MANIFEST_HCE_FILES := $(COMMON_PATH)/manifest_hce.xml
+ODM_MANIFEST_HCEESE_FILES := $(COMMON_PATH)/manifest_hceese.xml
+ODM_MANIFEST_HCESIM_FILES := $(COMMON_PATH)/manifest_hcesim.xml
+ODM_MANIFEST_HCESIMESE_FILES := $(COMMON_PATH)/manifest_hcesimese.xml
+
 ## Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
