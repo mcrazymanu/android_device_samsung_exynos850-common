@@ -145,6 +145,7 @@ VENDOR_SECURITY_PATCH := 2022-02-01
 
 ## SELinux
 BOARD_SEPOLICY_TEE_FLAVOR := teegris
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 include device/lineage/sepolicy/exynos/sepolicy.mk
 include device/samsung_slsi/sepolicy/sepolicy.mk
 

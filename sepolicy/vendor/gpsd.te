@@ -1,0 +1,6 @@
+allow gpsd gpsd_exec:file execute_no_trans;
+allow gpsd self:capability2 block_suspend;
+allow gpsd sysfs:file { getattr open read };
+allow gpsd sysfs_wake_lock:file { open write };
+allow gpsd gnss_device:chr_file { ioctl open read write };
+allow gpsd bootanim_system_prop:file { getattr map open read };

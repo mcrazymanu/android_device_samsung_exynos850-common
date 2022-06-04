@@ -1,0 +1,5 @@
+allow hal_power_default sysfs_battery:dir search;
+allow hal_power_default sysfs_battery_writable:file rw_file_perms;
+
+dontaudit hal_power_default sysfs_battery:file { open write };
+dontaudit hal_power_default sysfs_gpu_clock:file { open write };
