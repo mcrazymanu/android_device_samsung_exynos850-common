@@ -31,7 +31,7 @@
             "Name": "LowPowerProximity",
             "Path": "/sys/devices/virtual/sec/tsp/cmd",
             "Values": [
-                "ear_detect_enable,1",
+                "dummy_func,0",
                 "prox_lp_scan_mode,1"
             ],
             "ResetOnInit": true
@@ -160,7 +160,7 @@
             "PowerHint": "INTERACTIVE",
             "Node": "LowPowerProximity",
             "Duration": 0,
-            "Value": "ear_detect_enable,1"
+            "Value": "dummy_func,0"
         },
         {
             "PowerHint": "DOUBLE_TAP_TO_WAKE",
