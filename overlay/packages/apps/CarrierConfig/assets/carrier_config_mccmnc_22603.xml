@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<carrier_config>
+    <int name="smsToMmsTextThreshold" value="13"/>
+    <int name="recipientLimit" value="50"/>
+</carrier_config>

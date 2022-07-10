@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config>
+    <boolean name="apm_off_for_cs_silent_redial_sim" value="true"/>
+    <boolean name="carrier_name_override_bool" value="true" />
+    <string name="carrier_name_string">Play</string>
+    <int name="wfc_spn_format_idx_int" value="1" />
+    <int name="wfc_data_spn_format_idx_int" value="1" />
+    <int name="smsToMmsTextThreshold" value="6"/>
+</carrier_config>

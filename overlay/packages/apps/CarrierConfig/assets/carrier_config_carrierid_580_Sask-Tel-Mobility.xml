@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config>
+    <int name="maxImageHeight" value="1944"/>
+    <int name="smsToMmsTextThreshold" value="6"/>
+    <int name="maxMessageSize" value="1048576"/>
+    <int name="maxImageWidth" value="2592"/>
+    <string name="sim_country_iso_override_string">ca</string>
+    <string-array name="non_roaming_operator_string_array" num="1">
+        <item value="302"/>
+    </string-array>
+    <boolean name="do_not_use_previous_carrier_aggregation" value="true" />
+    <int name="wifi.carrier_profiles_version_int" value="1"/>
+    <string-array name="wifi.network_profiles_string_array" num="1">
+        <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;WifiNetwork&gt;&lt;SSID&gt;SaskTel Select Wi-Fi 1&lt;/SSID&gt;&lt;Credential&gt;&lt;SIM&gt;&lt;EAPType&gt;23&lt;/EAPType&gt;&lt;/SIM&gt;&lt;/Credential&gt;&lt;/WifiNetwork&gt;" />
+    </string-array>
+</carrier_config>

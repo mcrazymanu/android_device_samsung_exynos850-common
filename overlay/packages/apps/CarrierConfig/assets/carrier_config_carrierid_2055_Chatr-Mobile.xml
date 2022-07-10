@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config>
+    <int name="maxImageHeight" value="1944"/>
+    <int name="maxSubjectLength" value="80"/>
+    <int name="maxMessageSize" value="1048576"/>
+    <int name="maxImageWidth" value="2592"/>
+    <int name="emc_connection_limit_int_sim" value="20000" />
+    <boolean name="display_error_as_received_sim" value="true" />
+    <boolean name="do_not_use_previous_carrier_aggregation" value="true" />
+</carrier_config>

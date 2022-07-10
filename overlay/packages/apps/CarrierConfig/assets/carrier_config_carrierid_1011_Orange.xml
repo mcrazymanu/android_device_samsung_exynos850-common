@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config>
+    <boolean name="supportMMSOverWifi" value="false"/>
+    <boolean name="carrier_vt_available_bool" value="false"/>
+    <int name="smsToMmsTextThreshold" value="13"/>
+</carrier_config>

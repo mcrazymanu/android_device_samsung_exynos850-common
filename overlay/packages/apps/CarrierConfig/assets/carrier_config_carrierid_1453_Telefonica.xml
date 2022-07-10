@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config>
+    <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
+    <boolean name="carrier_name_override_bool" value="false" />
+    <string name="carrier_name_string">o2 - de</string>
+    <int name="smsToMmsTextThreshold" value="5"/>
+</carrier_config>

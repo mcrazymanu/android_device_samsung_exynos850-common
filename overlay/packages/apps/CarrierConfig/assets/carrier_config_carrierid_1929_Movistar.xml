@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config>
+    <boolean name="enabledMMS" value="false"/>
+    <boolean name="enableGroupMms" value="false"/>
+    <boolean name="enableMultipartSMS" value="true"/>
+    <int name="wifi.carrier_profiles_version_int" value="1"/>
+    <int name="smsToMmsTextThreshold" value="6"/>
+    <string-array name="wifi.network_profiles_string_array" num="1">
+        <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;WifiNetwork&gt;&lt;SSID&gt;MOVISTAR WIFI&lt;/SSID&gt;&lt;Credential&gt;&lt;SIM&gt;&lt;EAPType&gt;18&lt;/EAPType&gt;&lt;/SIM&gt;&lt;/Credential&gt;&lt;/WifiNetwork&gt;" />
+    </string-array>
+</carrier_config>

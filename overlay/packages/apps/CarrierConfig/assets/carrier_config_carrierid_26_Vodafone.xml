@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config>
+    <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+    <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
+    <boolean name="csp_enabled_bool" value="true"/>
+    <boolean name="carrier_volte_available_bool" value="true"/>
+    <int name="volte_replacement_rat_int" value="3"/>
+    <boolean name="use_call_barring_over_cs_sim" value="true" />
+    <int name="wifi.carrier_profiles_version_int" value="1"/>
+    <int name="smsToMmsTextThreshold" value="5"/>
+    <string-array name="wifi.network_profiles_string_array" num="1">
+        <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;WifiNetwork&gt;&lt;SSID&gt;VodafoneWiFi&lt;/SSID&gt;&lt;Credential&gt;&lt;SIM&gt;&lt;EAPType&gt;18&lt;/EAPType&gt;&lt;/SIM&gt;&lt;/Credential&gt;&lt;/WifiNetwork&gt;" />
+    </string-array>
+
+</carrier_config>

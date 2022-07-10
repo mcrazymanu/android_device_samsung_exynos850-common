@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config>
+    <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true" />
+    <boolean name="carrier_supports_ss_over_ut_bool" value="true"/>
+    <int name="smsToMmsTextThreshold" value="6"/>
+    <int name="maxMessageSize" value="1048576"/>
+    <int name="maxImageHeight" value="1944"/>
+    <int name="maxSubjectLength" value="80"/>
+    <int name="maxImageWidth" value="2592"/>
+    <string name="sim_country_iso_override_string">ca</string>
+    <boolean name="use_vowifi_call_after_call_fail_sim" value="true" />
+    <int name="emc_connection_limit_int_sim" value="10000" />
+    <int name="emc_turn_radio_retry_limit_int_sim" value="1" />
+    <boolean name="do_not_use_previous_carrier_aggregation" value="true" />
+    <int name="wifi.carrier_profiles_version_int" value="1"/>
+    <string-array name="wifi.network_profiles_string_array" num="2">
+        <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;WifiNetwork&gt;&lt;SSID&gt;ShawMobileHotspot&lt;/SSID&gt;&lt;Credential&gt;&lt;SIM&gt;&lt;EAPType&gt;23&lt;/EAPType&gt;&lt;/SIM&gt;&lt;/Credential&gt;&lt;/WifiNetwork&gt;" />
+        <item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;WifiNetwork&gt;&lt;SSID&gt;ShawPasspoint&lt;/SSID&gt;&lt;Credential&gt;&lt;SIM&gt;&lt;EAPType&gt;23&lt;/EAPType&gt;&lt;/SIM&gt;&lt;/Credential&gt;&lt;/WifiNetwork&gt;" />
+    </string-array>
+</carrier_config>

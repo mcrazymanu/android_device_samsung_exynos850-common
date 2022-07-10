@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config_list>
+<carrier_config>
+    <int name="smsToMmsTextThreshold" value="13"/>
+    <boolean name="enabledMMS" value="false" />
+    <string-array name="non_roaming_operator_string_array" num="2">
+    <item value="20416"/>
+    <item value="20420"/>
+    </string-array>
+    <boolean name="spn_display_rule_use_roaming_from_service_state_bool" value="true"/>
+</carrier_config>
+</carrier_config_list>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config>
+    <boolean name="do_not_use_previous_carrier_aggregation" value="true" />
+</carrier_config>

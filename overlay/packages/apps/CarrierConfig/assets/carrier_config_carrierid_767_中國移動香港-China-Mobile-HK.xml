@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config>
+    <string-array name="support_tdscdma_roaming_networks_string_array" num="4">
+        <item value="46000"/>
+        <item value="46002"/>
+        <item value="46007"/>
+        <item value="46008"/>
+    </string-array>
+    <boolean name="ss_policy_sim_cmcc" value="true" />
+    <boolean name="call_forwarding_over_ut_warning_bool" value="true" />
+    <boolean name="call_barring_over_ut_warning_bool" value="true" />
+    <boolean name="caller_id_over_ut_warning_bool" value="true" />
+    <boolean name="call_waiting_over_ut_warning_bool" value="true" />
+</carrier_config>

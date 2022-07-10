@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config>
+    <boolean name="allow_emergency_numbers_in_call_log_bool" value="true"/>
+    <boolean name="support_tdscdma_bool" value="true"/>
+    <int name="smsToMmsTextLengthThreshold" value="670"/>
+    <int name="recipientLimit" value="200" />
+    <boolean name="enableGroupMms" value="false"/>
+    <boolean name="ss_policy_sim_cmcc" value="true" />
+    <boolean name="call_forwarding_over_ut_warning_bool" value="true" />
+    <boolean name="call_barring_over_ut_warning_bool" value="true" />
+    <boolean name="caller_id_over_ut_warning_bool" value="true" />
+    <boolean name="call_waiting_over_ut_warning_bool" value="true" />
+    <boolean name="allow_add_call_during_video_call" value="false" />
+    <boolean name="allow_hold_video_call_bool" value="false" />
+    <boolean name="support_video_conference_call_bool" value="false"/>
+    <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
+    <string name="carrier_name_string">中国移动</string>
+    <string-array name="forbidden_plmn_list_string_array" num="3">
+        <item value="46011"/>
+        <item value="46001"/>
+        <item value="46009"/>
+    </string-array>
+</carrier_config>

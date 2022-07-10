@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config>
+    <int name="smsToMmsTextThreshold" value="6"/>
+    <boolean name="enabledMMS" value="false" />	
+</carrier_config>

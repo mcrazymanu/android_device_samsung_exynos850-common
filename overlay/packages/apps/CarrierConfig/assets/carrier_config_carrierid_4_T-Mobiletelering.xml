@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config>
+    <boolean name="display_hd_audio_property_bool" value="false"/>
+    <int name="smsToMmsTextThreshold" value="5"/>
+</carrier_config>

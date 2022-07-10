@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config>
+    <boolean name="hide_lte_plus_data_icon_bool" value="false"/>
+    <int name="recipientLimit" value="100"/>
+</carrier_config>

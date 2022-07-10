@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config>
+    <int name="maxImageHeight" value="1944"/>
+    <int name="maxMessageSize" value="1048576"/>
+    <int name="maxImageWidth" value="2592"/>
+    <boolean name="do_not_use_previous_carrier_aggregation" value="true" />
+</carrier_config>

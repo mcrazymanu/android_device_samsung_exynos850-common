@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<carrier_config>
+    <boolean name="allow_emergency_numbers_in_call_log_bool" value="true"/>
+    <boolean name="skip_cf_fail_to_disable_dialog_bool" value="true"/>
+    <boolean name="always_play_remote_hold_tone_bool" value="true" />
+    <int name="smsToMmsTextThreshold" value="5"/>
+    <int name="maxMessageSize" value="614400"/>
+    <string-array name="mmi_two_digit_number_pattern_string_array" num="1">
+        <item value="#9"/>
+    </string-array>
+	<int name="wifi.carrier_profiles_version_int" value="1"/>
+	<string-array name="wifi.passpoint_profiles_string_array" num="1">
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;PasspointProfile autojoin=&quot;true&quot;&gt;&lt;PPSMO&gt;&lt;![CDATA[&lt;MgmtTree xmlns=&quot;syncml:dmddf1.2&quot;&gt;&lt;VerDTD&gt;1.2&lt;/VerDTD&gt;&lt;Node&gt;&lt;NodeName&gt;PerProviderSubscription&lt;/NodeName&gt;&lt;RTProperties&gt;&lt;Type&gt;&lt;DDFName&gt;urn:wfa:mo:hotspot2dot0-perprovidersubscription:1.0&lt;/DDFName&gt;&lt;/Type&gt;&lt;/RTProperties&gt;&lt;Node&gt;&lt;NodeName&gt;i001&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;HomeSP&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;FriendlyName&lt;/NodeName&gt;&lt;Value&gt;AT&amp;T Wi-Fi Passpoint&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;FQDN&lt;/NodeName&gt;&lt;Value&gt;attwifi.com&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;Credential&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;Realm&lt;/NodeName&gt;&lt;Value&gt;wlan.mnc410.mcc310.3gppnetwork.org&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;SIM&lt;/NodeName&gt;&lt;Node&gt;&lt;NodeName&gt;IMSI&lt;/NodeName&gt;&lt;Value&gt;310410*&lt;/Value&gt;&lt;/Node&gt;&lt;Node&gt;&lt;NodeName&gt;EAPType&lt;/NodeName&gt;&lt;Value&gt;23&lt;/Value&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/Node&gt;&lt;/MgmtTree&gt;]]&gt;&lt;/PPSMO&gt;&lt;/PasspointProfile&gt;"/>
+	</string-array>
+</carrier_config>

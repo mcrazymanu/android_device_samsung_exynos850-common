@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<carrier_config_list>
+    <carrier_config>
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <boolean name="display_hd_audio_property_bool" value="false" />
+        <boolean name="carrier_name_override_bool" value="true" />
+        <string name="carrier_name_string">tele.ring</string>
+        <string-array name="non_roaming_operator_string_array" num="2">
+            <item value="23203"/>
+            <item value="23204"/>
+        </string-array>
+        <boolean name="spn_display_rule_use_roaming_from_service_state_bool" value="true"/>
+    </carrier_config>
+</carrier_config_list>
