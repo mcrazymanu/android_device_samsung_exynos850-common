@@ -28,6 +28,9 @@ static inline const char* getBTDefaultName()
     char device[PROPERTY_VALUE_MAX];
     property_get("ro.product.device", device, "");
 
+    if (!strcmp("a12s", device))
+        return "Galaxy A12";
+
     if (!strcmp("m12", device))
         return "Galaxy M12";
 
