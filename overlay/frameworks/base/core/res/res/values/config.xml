@@ -133,9 +133,6 @@
         <item>lte:2097152,4194304,8388608,1048576,3145728,4194304</item>
     </string-array>
 
-    <!-- Remote server that can provide NTP responses. -->
-    <string translatable="false" name="config_ntpServer">1.android.pool.ntp.org</string>
-
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
          May be less than the minimum allowed brightness setting
          that can be set by the user. -->
@@ -159,10 +156,6 @@
          Note that doze dreams are not subject to the same start conditions as ordinary dreams.
          Doze dreams will run whenever the power manager is in a dozing state. -->
     <string name="config_dozeComponent" translatable="false">com.android.systemui/com.android.systemui.doze.DozeService</string>
-
-    <!-- If true, the doze component is not started until after the screen has been
-         turned off and the screen off animation has been performed. -->
-    <bool name="config_dozeAfterScreenOffByDefault">true</bool>
 
     <!-- Power Management: Specifies whether to decouple the auto-suspend state of the
          device from the display on/off state.
@@ -211,11 +204,6 @@
          correctly use them when installed on your device.  Otherwise, keep this disabled
          so that applications can still use their own mechanisms. -->
     <bool name="config_enableAutoPowerModes">true</bool>
-
-    <integer name="config_dozeWakeLockScreenDebounce">1500</integer>
-
-    <!-- Whether the display blanks itself when transitioning from a doze to a non-doze state -->
-    <bool name="config_displayBlanksAfterDoze">true</bool>
 
     <!-- Indicate whether to allow the device to suspend when the screen is off
          due to the proximity sensor.  This resource should only be set to true
@@ -273,18 +261,6 @@
 
     <!-- Should the pinner service pin the Home application? -->
     <bool name="config_pinnerHomeApp">true</bool>
-
-    <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
-    <bool name="config_useRoundIcon">true</bool>
-
-    <!-- The package name for the default wellbeing app.
-         This package must be trusted, as it has the permissions to control other applications
-         on the device.
-         Example: "com.android.wellbeing"
-     -->
-    <!--
-    <string name="config_defaultWellbeingPackage" translatable="false">com.samsung.android.forest</string>
-    -->
 
     <!-- FP trustled limits the number to 4. -->
     <integer name="config_fingerprintMaxTemplatesPerUser">4</integer>
