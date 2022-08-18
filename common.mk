@@ -4,12 +4,13 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+## Common Path
 COMMON_PATH := device/samsung/exynos850-common
 
-# Enable project quotas and casefolding for emulated storage without sdcardfs
+## Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
-# Get non-open-source specific aspects
+## Get non-open-source specific aspects
 $(call inherit-product, vendor/samsung/exynos850-common/exynos850-common-vendor.mk)
 
 # Audio
@@ -26,9 +27,6 @@ PRODUCT_PACKAGES += \
     libaudioroute \
     libtinyalsa \
     libtinycompress
-
-PRODUCT_PACKAGES += \
-    SamsungDAP
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
@@ -52,17 +50,19 @@ PRODUCT_COPY_FILES += \
     hardware/samsung_slsi/libbt/conf/bt_did.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bt_did.conf \
     hardware/samsung_slsi/libbt/conf/bt_vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bt_vendor.conf
 
-# Bootanimation
-TARGET_BOOTANIMATION_HALF_RES := true
-
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-service_64.exynos850 \
-    libsensorndkbridge
+    libsensorndkbridge \
+    libshim_sensorndkbridge
 
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4-service
+
+# Dolby
+PRODUCT_PACKAGES += \
+    SamsungDAP
 
 # Doze
 PRODUCT_PACKAGES += \
@@ -76,7 +76,7 @@ PRODUCT_PACKAGES += \
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-# fastbootd
+# Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
 
@@ -248,10 +248,6 @@ PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0.vendor:64 \
     android.hardware.sensors@2.1-service.samsung-multihal
 
-# Shims
-PRODUCT_PACKAGES += \
-    libshim_sensorndkbridge
-
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(COMMON_PATH) \
@@ -281,12 +277,14 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
+    WifiOverlay \
     android.hardware.wifi@1.0-service \
     hostapd \
-    wpa_supplicant \
-    WifiOverlay
+    wpa_supplicant
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(COMMON_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     $(COMMON_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
+
+PRODUCT_CFI_INCLUDE_PATHS += hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib

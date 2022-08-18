@@ -1,6 +1,6 @@
 # Common proprietary files - from Samsung package version M127FXXS3AVF3, unless pinned
 
-## Audio
+# Audio
 -vendor/lib/hw/audio.primary.exynos850.so
 -vendor/lib/libSamsungPostProcessConvertor.so
 -vendor/lib/lib_SamsungRec_07010.so
@@ -31,7 +31,7 @@ vendor/etc/mixer_gains.xml
 vendor/etc/mixer_paths.xml
 vendor/etc/usb_audio_policy_configuration.xml
 
-## Audio Firmware
+# Audio Firmware
 vendor/firmware/AP_AUDIO_SLSI.bin
 vendor/firmware/APDV_AUDIO_SLSI.bin
 vendor/firmware/SoundBoosterParam.bin
@@ -41,14 +41,13 @@ vendor/firmware/calliope_sram.bin
 vendor/firmware/calliope_sram_2.bin
 vendor/firmware/dax_param.bin
 
-## Bluetooth
 # Bluetooth (aptX) - from crosshatch - QP1A.190711.020
 -product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 
-## Bluetooth Firmware
+# Bluetooth Firmware
 vendor/etc/wifi/mx140_bt.hcf
 
-## Camera
+# Camera
 -vendor/lib/hw/camera.exynos850.so
 -vendor/lib/libexynoscamera_plugin.so
 -vendor/lib/libremosaic_wrapper.so
@@ -57,7 +56,7 @@ vendor/etc/wifi/mx140_bt.hcf
 -vendor/lib64/libremosaic_wrapper.so
 -vendor/lib64/libsec2lsi_conversion.so
 
-## Camera dependencies
+# Camera dependencies
 -vendor/lib/libSEF.quram.so
 -vendor/lib/libacryl.so
 -vendor/lib/libcsc.so
@@ -80,15 +79,15 @@ vendor/etc/wifi/mx140_bt.hcf
 -vendor/lib64/libuniapi.so
 -vendor/lib64/libuniplugin.so
 
-## Charger Firmware
+# Charger Firmware
 vendor/firmware/mfc_fw.bin
 
-## Codecs
+# Codecs
 vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_performance.xml
 vendor/etc/media_profiles_V1_0.xml
 
-## Fingerprint
+# Fingerprint
 -vendor/lib/libbauthserver.so
 -vendor/lib/libbauthtzcommon.so
 -vendor/lib/libegis_fp_normal_sensor_test.so
@@ -102,7 +101,7 @@ vendor/etc/media_profiles_V1_0.xml
 -vendor/lib64/libqfp_sensortest.so
 -vendor/lib64/libsynaFpSensorTestNwd.so
 
-## Firmware
+# Firmware
 vendor/firmware/MCD_NACHO_slog.bin
 vendor/firmware/abox_tplg.bin
 vendor/firmware/abox_tplg.conf
@@ -127,11 +126,11 @@ vendor/firmware/tdnr_SR846.json
 vendor/firmware/txse1.bin
 vendor/firmware/txse2.bin
 
-## Gatekeeper
+# Gatekeeper
 -vendor/lib/hw/gatekeeper.exynos850.so
 -vendor/lib64/hw/gatekeeper.exynos850.so
 
-## GPS
+# GPS
 vendor/bin/hw/gps.sh
 -vendor/bin/hw/gpsd
 -vendor/bin/hw/vendor.samsung.hardware.gnss@2.0-service
@@ -143,7 +142,7 @@ vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc
 -vendor/lib64/vendor.samsung.hardware.gnss@2.0.so
 -vendor/lib64/libwrappergps.so
 
-## Graphics
+# Graphics
 -vendor/bin/hw/android.hardware.graphics.allocator@4.0-service
 -vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc
 -vendor/lib/egl/libGLES_mali.so
@@ -157,7 +156,7 @@ vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc
 -vendor/lib64/arm.graphics-V1-ndk_platform.so
 -vendor/lib64/libion_exynos.so
 
-## HWC
+# HWC
 -vendor/lib64/hw/hwcomposer.exynos850.so
 -vendor/lib/libExynosHWCService.so
 -vendor/lib/libexynosdisplay.so
@@ -176,20 +175,20 @@ vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc
 -vendor/lib64/libexynosutils.so
 -vendor/lib64/libexynosv4l2.so
 
-## Keymaster
+# Keymaster
 -vendor/lib64/libkeymaster_helper.so
 -vendor/lib64/libskeymaster4device.so
 
-## Memtrack
+# Memtrack
 -vendor/lib64/hw/memtrack.exynos850.so
 -vendor/lib/hw/memtrack.exynos850.so
 
-## NFC
+# NFC
 vendor/etc/nfc/sec_s3nrn4v_swreg.bin
 vendor/etc/nfc/sec_s3nrn4v_hwreg.bin
 vendor/firmware/nfc/sec_s3nrn4v_firmware.bin
 
-## OMX
+# OMX
 -vendor/lib/libepicoperator.so
 -vendor/lib/libstagefrighthw.so
 -vendor/lib/libExynosOMX_Core.so
@@ -217,11 +216,11 @@ vendor/firmware/nfc/sec_s3nrn4v_firmware.bin
 -vendor/lib64/omx/libOMX.Exynos.VP8.Encoder.so
 -vendor/lib64/omx/libOMX.Exynos.WMV.Decoder.so
 
-## OMX Firmware
+# OMX Firmware
 vendor/firmware/is_lib.bin
 vendor/firmware/is_rta.bin
 
-## RIL
+# RIL
 -vendor/bin/hw/rild
 -vendor/bin/cbd
 vendor/etc/init/init.baseband.rc
@@ -251,11 +250,11 @@ vendor/etc/plmn_se13.bin
 -vendor/lib64/vendor.samsung.hardware.radio@2.0.so
 -vendor/lib64/vendor.samsung.hardware.radio@2.1.so
 
-## SECNATIVE
+# SECNATIVE
 -vendor/lib/libsecnativefeature.so
 -vendor/lib64/libsecnativefeature.so
 
-## TEEGRIS
+# TEEGRIS
 -vendor/bin/tzdaemon
 -vendor/bin/tzts_daemon
 vendor/etc/init/teegris_v4.rc
@@ -265,7 +264,7 @@ vendor/etc/init/teegris_v4.rc
 -vendor/lib64/libteecl.so
 -vendor/lib64/libuuid.so
 
-## TEEGRIS Firmware
+# TEEGRIS Firmware
 vendor/tee/00000000-0000-0000-0000-00000000dead
 vendor/tee/00000000-0000-0000-0000-000000010081
 vendor/tee/00000000-0000-0000-0000-000000020081
@@ -290,7 +289,7 @@ vendor/tee/driver/00000000-0000-0000-0000-564c544b4456
 vendor/tee/driver/18d9f073-18a5-4ade-9def-875e07f7f293_
 vendor/tee/tui/resolution_common/ID00000100
 
-## Sensors
+# Sensors
 vendor/etc/sensors/hals.conf
 -vendor/lib/hw/sensors.sensorhub.so
 -vendor/lib/sensors.grip.so
@@ -299,13 +298,13 @@ vendor/etc/sensors/hals.conf
 -vendor/lib64/sensors.grip.so
 -vendor/lib64/sensors.inputvirtual.so
 
-## Widevine
+# Widevine
 -vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 -vendor/lib/libwvhidl.so
 
-## Wi-Fi
+# Wi-Fi
 vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_slsi.rc
 vendor/etc/wifi/hydra_config.sdb
